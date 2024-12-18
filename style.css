@@ -1,0 +1,142 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Apply Poppins font throughout */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #191924; /* Whole page background color */
+    color: white;
+    height: 100%;
+  }
+  
+  /* Styling for the landing page */
+  .landing {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #191924;
+    color: white;
+  }
+  
+  .landing h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .landing p {
+    font-size: 1.2em;
+    color: #97989E;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  
+  /* Search Bar Styling */
+  .search-container {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .search-container input {
+    padding: 12px;
+    font-size: 1.2em;
+    width: 300px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-container button {
+    padding: 12px 20px;
+    font-size: 1.2em;
+    background-color: rgb(152, 0, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background-color: #9400b7;
+  }
+  
+  /* Books List Section */
+  #book-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .book-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #191924; /* Use the same background color as the body */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    color: white;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .book-card h3 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .book-card .author,
+  .book-card .genre {
+    font-weight: 600;
+    margin-top: 10px;
+    color: rgb(152, 0, 255);
+  }
+  
+  
+  
+  /* Card Layout Adjustments for Full Description */
+.book-card .description {
+    font-size: 1.1em;
+    color: #97989E;
+    margin-top: 10px;
+    line-height: 1.5;
+    max-height: none; /* Allow full description to display */
+    overflow: visible; /* Ensure full description is shown */
+  }
+  
+  /* When no results are found */
+  #no-results {
+    text-align: center;
+    font-size: 1.5em;
+    color: #97989E;
+    margin-top: 20px;
+  }
+  
+  /* Footer Section */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #191924;
+    color: white;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Footer Section */
+  footer p {
+    font-size: 0.9em;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    #book-list {
+      grid-template-columns: 1fr; /* 1 card per row on small screens */
+    }
+  }
+  

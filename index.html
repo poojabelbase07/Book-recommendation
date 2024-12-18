@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Recommendation</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Landing Section -->
+  <div class="landing">
+    <h1>Quickly Find What’s Hot in Books!</h1>
+    <p>Discover Your Next Favorite Book in a Flash! Our handpicked recommendations are tailored just for you. Whether you're looking for the latest bestsellers, hidden gems, or timeless classics, we make it easy to find exactly what you're craving. Start exploring now and let your next page-turner find you.</p>
+  </div>
+
+  <!-- Search Bar Section -->
+  <div class="search-container">
+    <input type="text" id="genre" placeholder="Enter a genre (e.g. fiction)" />
+    <button onclick="fetchBooks()">Search</button>
+  </div>
+
+  <!-- Books Results Section -->
+  <div id="book-list"></div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Copyrights Reserved by @poojabelbase</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
